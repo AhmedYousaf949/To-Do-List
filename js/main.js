@@ -19,12 +19,12 @@ class Card {
     }
   }
 }
-// Enable Show/Hide for existing cards
+//Show/Hide
 const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
   new Card(card);
 });
-class App {
+class Form_Card {
   constructor() {
     this.form = document.getElementById("task-form");
     this.title = document.getElementById("title");
@@ -55,9 +55,8 @@ class App {
     `;
     this.container.appendChild(card);
     new Card(card);
-    // Clear the form
     this.title.value = "";
     this.description.value = "";
   }
 }
-new App();
+new Form_Card();
