@@ -142,7 +142,7 @@ h2 {
 .card {
   background: var(--white);
   border-radius: var(--borderRadius);
-  box-shadow: var(--shadow-2);
+  /* box-shadow: var(--shadow-2); */
   overflow: hidden;
 }
 /* Header */
@@ -179,4 +179,56 @@ h2 {
 }
 .card.active .card-content {
   display: block;
+}
+/*Form*/
+.task-form {
+  width: 100%;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+.form-control label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--grey-700);
+}
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: var(--bodyFont);
+  border: 1px solid var(--grey-300);
+  border-radius: var(--borderRadius);
+  background: var(--grey-50);
+}
+.form-control textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  border: 2px solid salmon;
+}
+.btn {
+  width: fit-content;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: var(--borderRadius);
+  background: var(--primary-500);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--primary-600);
 }
